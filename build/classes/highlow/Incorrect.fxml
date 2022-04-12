@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="highlow.IncorrectController">
+   <children>
+      <Label layoutX="108.0" layoutY="63.0" text="Incorrect!">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="125.0" prefHeight="30.0" prefWidth="100.0" text="Highscore: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="169.0" prefHeight="30.0" prefWidth="100.0" text="Score:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="highScore" editable="false" layoutX="115.0" layoutY="127.0" promptText="0" />
+      <TextField fx:id="score" editable="false" layoutX="115.0" layoutY="171.0" promptText="0" />
+      <Button fx:id="retryBtn" layoutX="100.0" layoutY="268.0" mnemonicParsing="false" onAction="#retryBtnOnAction" prefHeight="40.0" prefWidth="100.0" text="Retry" />
+      <Button fx:id="mainMenuBtn" layoutX="100.0" layoutY="343.0" mnemonicParsing="false" onAction="#MainMenuBtnOnAction" prefHeight="40.0" prefWidth="100.0" text="Main Menu" />
+   </children>
+</AnchorPane>
